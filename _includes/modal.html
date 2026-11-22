@@ -12,6 +12,9 @@
     <div class="content">
       {% assign project_media = project.media | default: project.image %}
       {% include project-media.html media=project_media %}
+      {% if project_media.caption %}
+      <p class="media-caption">{{ project_media.caption | escape }}</p>
+      {% endif %}
       <div class="description">{{ project.description }}</div>
       {% for content in project.contents %}
       <div class="sub-content">

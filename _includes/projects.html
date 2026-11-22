@@ -15,12 +15,12 @@
       {% for item in group.items %}
       {% assign project = item.project %}
       {% assign id = id | plus: 1 %}
-      {% assign project_media = project.media | default: project.image %}
+      {% assign project_media = project.preview | default: project.media | default: project.image %}
       <div class="card-wrapper">
         <div class="card">
           {% if project_media %}
           <div class="img-wrap">
-            {% include project-media.html media=project_media %}
+            {% include project-media.html media=project_media autoplay=true %}
           </div>
           {% endif %}
           <div class="text-wrap">

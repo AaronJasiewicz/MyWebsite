@@ -23,7 +23,7 @@
   {% case media.type %}
     {% when 'video' %}
       {% assign video_type = media.mime_type | default: 'video/mp4' %}
-      <video controls loop playsinline preload="metadata"{% if poster_url %} poster="{{ poster_url }}"{% endif %}>
+      <video controls{% if include.autoplay %} autoplay muted{% endif %} loop playsinline preload="metadata"{% if poster_url %} poster="{{ poster_url }}"{% endif %}>
         <source src="{{ media_url }}" type="{{ video_type }}">
         Your browser does not support the video tag.
       </video>

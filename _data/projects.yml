@@ -6,12 +6,14 @@
     title: HARBOR_DOCK — SRIIAS, Tongji University
     summary: Foundation-model-based long-horizon one-shot planning for autonomous mobile manipulation.
     skills: ["Python (PyTorch)"]
-    description: At SRIIAS, Tongji University, I am developing HARBOR-DOCK, a harness-engineering framework for foundation-model-based mobile manipulation. The framework combines an evolving skill library with perception-based feedback to plan and execute long-horizon tasks in a single attempt on a dual-arm mobile manipulator.
+    description: >-
+      At the Shanghai Research Institute for Intelligent Autonomous Systems (SRIIAS), Tongji University, I am developing HARBOR-DOCK, a harness-engineering framework for long-horizon mobile manipulation. Given a single pair of wrist-camera images, the robot's initial state and calibration, and a concise task instruction, the system can perform previously unseen tasks without task-specific pretraining. It leverages foundation models and an evolving skill library, guided by physical and geometric constraints, to plan and execute tasks on a dual-arm mobile manipulator.
     media:
       type: video
       path: HARBOR_DOCK.mp4
       mime_type: video/mp4
-      alt: HARBOR-DOCK harness-engineering framework demonstration of the task description "Pick up the dumbling and drop it in the basket"
+      alt: HARBOR-DOCK mobile-manipulation demonstration
+      caption: 'Task instruction: "Grab the dumpling and drop it into the basket"'
 
 - project:
     category: Academic & Professional
@@ -19,9 +21,10 @@
     modal: True
     date: September 2025 – July 2026
     title: LIE IS — DRCD, KAIST
-    summary: Tightly coupled invariant smoothing for state estimation in legged robots.
+    summary: Invariant LiDAR-proprioceptive smoothing for quadruped state estimation.
     skills: ["C++", "MATLAB"]
-    description: At the Dynamic Robot Control & Design Laboratory (DRCD), KAIST, I developed a tightly coupled invariant smoother for quadruped state estimation. The fixed-lag estimator jointly incorporates LiDAR scan-to-map geometry with inertial and leg-kinematic measurements to estimate the robot's motion.
+    description: >-
+      At the Dynamic Robot Control & Design Laboratory (DRCD), KAIST, I extended a proprioceptive baseline for quadruped state estimation with a LiDAR scan-to-map factor expressed in right-invariant error coordinates, preserving the smoother's invariant error dynamics. To investigate convergence behavior in isolation, I also developed a non-invariant counterpart. Evaluations on native and public datasets showed that both formulations achieved accuracy competitive with an established estimator.
     media:
       type: video
       path: InvariantSmoother.mp4
@@ -29,7 +32,7 @@
       alt: LIE-IS invariant smoothing framework demonstration
     contents:
       - title: Research focus
-        description: Jointly incorporates LiDAR scan-to-map geometry with inertial and kinematic factors in a fixed-lag estimator.
+        description: The fixed-lag estimator combines LiDAR scan-to-map constraints with inertial and leg-kinematic measurements. The invariant and non-invariant formulations support a controlled comparison of convergence behavior.
 
 - project:
     category: Academic & Professional
@@ -37,21 +40,25 @@
     modal: True
     date: July 2024 – September 2025
     title: Co-Founder — SKYLAB Aerial Robotics, KIT
-    summary: Co-founded a student aerial robotics team.
+    summary: Co-founded a student aerial robotics association.
     skills: ["C++"]
-    description: At KIT, I co-founded SKYLAB Aerial Robotics and served as CFO and interim CTO. I managed the team's finances and hardware procurement while leading development of its drone-control software. The video shows the team's UAV hardware chassis and rotor assembly.
+    description: At KIT, I co-founded SKYLAB Aerial Robotics, a student association, and served as CFO and interim CTO. I managed the association's finances and hardware procurement while leading development of its drone-control software. The video shows the association's UAV hardware chassis and rotor assembly.
+    preview:
+      type: image
+      path: "/assets/img/SkyLAB.jpeg"
+      alt: SKYLAB Aerial Robotics student association team with a drone
     media:
       type: video
       path: SKYLAB.mp4
       mime_type: video/mp4
       alt: SKYLAB UAV hardware chassis and rotor assembly
     contents:
-      - title: SKYLAB Aerial Robotics team
+      - title: SKYLAB Aerial Robotics student association
         media:
           type: image
           path: "/assets/img/SkyLAB.jpeg"
-          alt: SKYLAB Aerial Robotics team with a drone
-        description: Team photograph from the SKYLAB Aerial Robotics project at KIT.
+          alt: SKYLAB Aerial Robotics student association team with a drone
+        description: Team photograph of the SKYLAB Aerial Robotics student association at KIT.
 
 - project:
     category: Academic & Professional
@@ -77,7 +84,7 @@
     summary: Development vehicle support and control-unit signal analysis.
     skills: ["Python", "CAN Bus"]
     description: >-
-      During my R&D internship at Mercedes-AMG, I developed the MIDAS Python tool to process MDF4 measurement files, identify diagnostic trouble codes (DTCs), error events, and malfunction-indicator-lamp (MIL) activations, and search for predefined signal conditions. I was also de facto responsible for investigating a field-customer error: I traced its cause to control-unit signals, reproduced the issue from measurement data, and coordinated with software providers to deliver a software fix. I designed the validation campaign, took part in three test-site trips, analyzed data throughout the campaign, and instructed the endurance-testing team.
+      During my R&D internship at Mercedes-AMG, I developed the MIDAS Python tool to process MDF4 measurement files, identify diagnostic trouble codes (DTCs), error events, and malfunction-indicator-lamp (MIL) activations, and search for predefined signal conditions. I was also de facto responsible for investigating a field-customer error. I traced its cause to control-unit signals, reproduced the issue from measurement data, and coordinated with software providers to deliver a software fix. I designed the validation campaign, took part in three test-site trips, analyzed data throughout the campaign, and instructed the endurance-testing team. We successfully validated the resolution of the reported error, and the software fix was ultimately delivered to the customer.
     media:
       type: image
       path: AMG.png
@@ -89,9 +96,9 @@
     modal: True
     date: August 2023
     title: Bachelor's Thesis Student - IFKM, KIT
-    summary: Combustion anomaly detection for a hydrogen engine.
+    summary: Cylinder-pressured-indication-based knock detection and staged combustion control for a hydrogen engine.
     skills: ["Simulink", "MATLAB", "dSPACE"]
-    description: At KIT's Institute for Reciprocating Engines (IFKM), I developed a cylinder-pressure-based method for detecting combustion anomalies in a hydrogen internal-combustion engine. I implemented the measurement and analysis workflow in a rapid-prototyping environment and evaluated the method using engine data.
+    description: At KIT's Institute for Reciprocating Engines (IFKM), I developed a cylinder-pressure-indication-based knock-detection and mitigation controller for a hydrogen internal-combustion engine. Implemented in MATLAB/Simulink and deployed on dSPACE for rapid prototyping, the controller first retards ignition timing when pressure-derived indicators detect knock. If combustion quality does not improve, a second control stage reduces the fuel mass.
     media:
       type: image
       path: BA_Setup.jpeg
@@ -102,7 +109,7 @@
           type: image
           path: BA_System.jpeg
           alt: Control-system model for combustion anomaly detection
-        description: I implemented an engine-indication measurement chain, integrated online thermodynamic and combustion calculations, and validated the control strategy using a dSPACE hardware-in-the-loop setup.
+        description: I implemented the engine-indication measurement chain and online thermodynamic and combustion calculations used to derive pressure-based knock indicators. I integrated the two-stage ignition-retard and fuel-mass control in MATLAB/Simulink and deployed it to dSPACE for rapid-prototyping tests.
 
 - project:
     category: Course Projects
@@ -185,34 +192,39 @@
     title: Hybrid Tractor Powertrain — Mechanical Design
     summary: Mechanical design and dimensioning of a hybrid tractor powertrain.
     skills: ["Drawing", "CAD"]
-    description: At KIT, I completed a hybrid-tractor powertrain as the capstone project of a four-semester mechanical-design sequence. I developed the powertrain concept, dimensioned its components, and produced mechanical drawings. The modal gallery also presents selected designs from the broader coursework, ordered from the newest exercise to the oldest.
+    description: At KIT, I completed a hybrid-tractor powertrain as the capstone project of a four-semester mechanical-design sequence. I developed the powertrain concept, dimensioned its components, and produced mechanical drawings. The modal presents this powertrain drawing, followed by a planetary transmission mechanism, a piston transmission mechanism, a tractor portal axle, a differential gearbox, a pile driver, and a transmission gearbox.
     media:
       type: image
-      path: Mechanical_Design_06.jpeg
-      alt: Newest mechanical design drawing in the coursework gallery
+      path: HybridPowertrain.jpeg
+      alt: Initial mechanical design drawing of the hybrid tractor powertrain
     contents:
-      - title: Mechanical design 04
+      - title: Planetary transmission mechanism
         media:
           type: image
-          path: Mechanical_Design_04.jpeg
-          alt: Mechanical design drawing, exercise 04
-      - title: Mechanical design 03
-        media:
-          type: image
-          path: MechanicalDesign_03.jpeg
-          alt: Mechanical design drawing, exercise 03
-      - title: Mechanical design 02
-        media:
-          type: image
-          path: Mechanical_Design_02.jpeg
-          alt: Mechanical design drawing, exercise 02
-      - title: Mechanical design 01
+          path: Mechanical_Design_06.jpeg
+          alt: Planetary transmission mechanism
+      - title: Piston transmission mechanism
         media:
           type: image
           path: Mechanical_Design_01.jpeg
-          alt: Oldest mechanical design drawing in the coursework gallery
-      - title: Hybrid tractor powertrain
+          alt: Transmission mechanism for a piston
+      - title: Tractor portal axle
         media:
           type: image
-          path: HybridPowertrain.jpeg
-          alt: Mechanical design drawing of the hybrid tractor powertrain
+          path: Mechanical_Design_02.jpeg
+          alt: Portal axle design for a tractor
+      - title: Differential gearbox
+        media:
+          type: image
+          path: MechanicalDesign_03.jpeg
+          alt: Differential gearbox
+      - title: Pile driver
+        media:
+          type: image
+          path: Mechanical_Design_012.jpeg
+          alt: Pile driver mechanical design
+      - title: Transmission gearbox
+        media:
+          type: image
+          path: Mechanical_Design_04.jpeg
+          alt: Transmission gearbox mechanical design
