@@ -8,6 +8,7 @@
   <div class="project-wrap">
     <p class="title">{{ site.theme_settings.projects_title }}</p>
     {% assign project_groups = site.data.projects | group_by_exp: "item", "item.project.category" %}
+    {% assign id = 0 %}
     {% for group in project_groups %}
     <p class="category-title">{{ group.name }}</p>
     <div class="card-container">
@@ -48,17 +49,23 @@
           </div>
         </div>
       </div>
-      <!-- Modal Box -->
-      {% if project.modal %}
-      {% include modal.html %}
-      {% endif %}
-      <!-- Modal Box -->
       {% endfor %}
     </div>
     {% endfor %}
   </div>
   <div class="bg"></div>
 </section>
+
+{% assign id = 0 %}
+{% for group in project_groups %}
+{% for item in group.items %}
+  {% assign project = item.project %}
+  {% assign id = id | plus: 1 %}
+  {% if project.modal %}
+    {% include modal.html %}
+  {% endif %}
+{% endfor %}
+{% endfor %}
 
 <!-- modal -->
 <script type="text/javascript" src="{{ '/assets/js/modal.js' | relative_url }}"></script>

@@ -3,25 +3,25 @@
     print: True
     modal: True
     date: September 2026 – Present
-    title: Visiting Researcher — Tongji University
-    summary: Foundation-model-based planning for autonomous mobile manipulation.
+    title: HARBOR_DOCK — SRIIAS, Tongji University
+    summary: Foundation-model-based long-horizon one-shot planning for autonomous mobile manipulation.
     skills: ["Python (PyTorch)"]
-    description: Developing HARBOR-DOCK, a harness-engineering framework for a foundation-model planning system. It uses an evolving skill library and perception-based feedback for one-shot, long-horizon planning and execution on a dual-arm mobile manipulator.
+    description: At SRIIAS, Tongji University, I am developing HARBOR-DOCK, a harness-engineering framework for foundation-model-based mobile manipulation. The framework combines an evolving skill library with perception-based feedback to plan and execute long-horizon tasks in a single attempt on a dual-arm mobile manipulator.
     media:
       type: video
       path: HARBOR_DOCK.mp4
       mime_type: video/mp4
-      alt: HARBOR-DOCK harness-engineering framework demonstration
+      alt: HARBOR-DOCK harness-engineering framework demonstration of the task description "Pick up the dumbling and drop it in the basket"
 
 - project:
     category: Academic & Professional
     print: True
     modal: True
     date: September 2025 – July 2026
-    title: KAIST Research & Master's Thesis — LIE-IS
+    title: LIE IS — DRCD, KAIST
     summary: Tightly coupled invariant smoothing for state estimation in legged robots.
     skills: ["C++", "MATLAB"]
-    description: Conducted research in the Dynamic Robot Control & Design Laboratory on a tightly coupled invariant smoother that fuses LiDAR, inertial, and leg-kinematic measurements for quadrupedal robot state estimation.
+    description: At the Dynamic Robot Control & Design Laboratory (DRCD), KAIST, I developed a tightly coupled invariant smoother for quadruped state estimation. The fixed-lag estimator jointly incorporates LiDAR scan-to-map geometry with inertial and leg-kinematic measurements to estimate the robot's motion.
     media:
       type: video
       path: InvariantSmoother.mp4
@@ -36,24 +36,32 @@
     print: True
     modal: True
     date: July 2024 – September 2025
-    title: Co-Founder — SKYLAB Aerial Robotics
+    title: Co-Founder — SKYLAB Aerial Robotics, KIT
     summary: Co-founded a student aerial robotics team.
     skills: ["C++"]
-    description: Managed financial resources and hardware procurement, and led development of drone-control software.
+    description: At KIT, I co-founded SKYLAB Aerial Robotics and served as CFO and interim CTO. I managed the team's finances and hardware procurement while leading development of its drone-control software. The video shows the team's UAV hardware chassis and rotor assembly.
     media:
-      type: image
-      path: "/assets/img/SkyLAB.jpeg"
-      alt: SKYLAB Aerial Robotics team with a drone
+      type: video
+      path: SKYLAB.mp4
+      mime_type: video/mp4
+      alt: SKYLAB UAV hardware chassis and rotor assembly
+    contents:
+      - title: SKYLAB Aerial Robotics team
+        media:
+          type: image
+          path: "/assets/img/SkyLAB.jpeg"
+          alt: SKYLAB Aerial Robotics team with a drone
+        description: Team photograph from the SKYLAB Aerial Robotics project at KIT.
 
 - project:
     category: Academic & Professional
     print: True
     modal: True
     date: April 2024 – December 2024
-    title: Working Student — Fraunhofer IOSB
+    title: AMFIS Interface Application for UAVs — Fraunhofer IOSB
     summary: Mobile software development contributing to the AMFIS project.
     skills: ["Java", "Kotlin"]
-    description: During my working-student role at Fraunhofer IOSB, I developed a standalone Android application in Java and Kotlin for DJI systems and unmanned aerial vehicles, contributing to the AMFIS project.
+    description: During my working-student role at Fraunhofer IOSB, I developed a standalone Android interface application in Java and Kotlin for DJI systems and unmanned aerial vehicles. This software work contributed to the institute's AMFIS project.
     url: https://www.iosb.fraunhofer.de/en/projects-and-products/AMFIS.html
     media:
       type: image
@@ -65,10 +73,11 @@
     print: True
     modal: True
     date: September 2023 – March 2024
-    title: R&D Intern — Mercedes-AMG
+    title: MIDAS Tool & Customer Error Project — Mercedes-AMG
     summary: Development vehicle support and control-unit signal analysis.
     skills: ["Python", "CAN Bus"]
-    description: Built a Python CAN-bus tool that processes MDF4 files, identifies DTCs, error events and MIL activations, and searches predefined signal conditions.
+    description: >-
+      During my R&D internship at Mercedes-AMG, I developed the MIDAS Python tool to process MDF4 measurement files, identify diagnostic trouble codes (DTCs), error events, and malfunction-indicator-lamp (MIL) activations, and search for predefined signal conditions. I was also de facto responsible for investigating a field-customer error: I traced its cause to control-unit signals, reproduced the issue from measurement data, and coordinated with software providers to deliver a software fix. I designed the validation campaign, took part in three test-site trips, analyzed data throughout the campaign, and instructed the endurance-testing team.
     media:
       type: image
       path: AMG.png
@@ -79,10 +88,10 @@
     print: True
     modal: True
     date: August 2023
-    title: Bachelor's Thesis
+    title: Bachelor's Thesis Student - IFKM, KIT
     summary: Combustion anomaly detection for a hydrogen engine.
     skills: ["Simulink", "MATLAB", "dSPACE"]
-    description: Developed a cylinder-pressure-based method to detect combustion anomalies in a hydrogen internal-combustion engine within a rapid-prototyping environment.
+    description: At KIT's Institute for Reciprocating Engines (IFKM), I developed a cylinder-pressure-based method for detecting combustion anomalies in a hydrogen internal-combustion engine. I implemented the measurement and analysis workflow in a rapid-prototyping environment and evaluated the method using engine data.
     media:
       type: image
       path: BA_Setup.jpeg
@@ -93,17 +102,17 @@
           type: image
           path: BA_System.jpeg
           alt: Control-system model for combustion anomaly detection
-        description: Implemented an engine-indication measurement chain, added online thermodynamic and combustion calculations, and validated the control strategy in a hardware-in-the-loop environment.
+        description: I implemented an engine-indication measurement chain, integrated online thermodynamic and combustion calculations, and validated the control strategy using a dSPACE hardware-in-the-loop setup.
 
 - project:
     category: Course Projects
     print: True
     modal: True
     date: December 2025
-    title: Autonomous Driving Simulation — CARLA
-    summary: A course project using the CARLA simulator.
+    title: Autonomous Driving Simulation — Autonomous Mobile System Programming
+    summary: Group project simulating an autonomous vehicle in the CARLA simulator.
     skills: ["Python", "CARLA"]
-    description: Simulated an autonomous driving scenario in the CARLA environment.
+    description: For the Autonomous Mobile System Programming course, I developed perception and planning components for a vehicle in the CARLA simulator. My responsibilities included PointPillars-based 3D vehicle detection, motion-prediction logic, and long-horizon path planning. I also contributed to traffic-light recognition and co-presented the final project results with a teammate.
     media:
       type: video
       path: CARLA.mp4
@@ -115,10 +124,10 @@
     print: True
     modal: True
     date: April 2025
-    title: Traffic Network Enhancements — ITS
-    summary: VISSIM case study of a traffic network in Sandhausen.
+    title: Traffic Network Enhancements — Intelligent Transportation Systems
+    summary: VISSIM case study of a traffic network of my hometown.
     skills: ["VISSIM"]
-    description: Assessed traffic-network enhancements in a four-junction VISSIM model, including vehicle and pedestrian flows, public transport, and intersection priorities.
+    description: For the Intelligent Transportation Systems course during my Erasmus semester at Trinity College Dublin, I modeled a four-junction network of my hometown in VISSIM. I evaluated changes to vehicle and pedestrian flows, public-transport operations, and intersection priorities against the baseline using traffic volume, travel time, delay, and average stops as performance measures.
     media:
       type: video
       path: ITSImproved.mp4
@@ -131,7 +140,7 @@
           path: ITSDefault.mp4
           mime_type: video/mp4
           alt: Default VISSIM traffic network simulation
-        description: Baseline traffic simulation before the network enhancements.
+        description: Baseline VISSIM scenario used to compare the proposed network changes.
 
 - project:
     category: Course Projects
@@ -141,7 +150,7 @@
     title: Autonomous Warehouse Delivery Robot — Mobile Robotics
     summary: Design and navigation of an autonomous warehouse robot in Webots.
     skills: ["Python", "Webots"]
-    description: Designed a six-wheel delivery robot and implemented GPS/IMU-based localization, A* path planning, waypoint following, and real-time obstacle avoidance in Webots.
+    description: For the Mobile Robotics course, I designed a six-wheel warehouse-delivery robot in Webots. I integrated GPS/IMU-based localization and distance sensing with A* path planning, waypoint following, and real-time obstacle avoidance. The design also included a loading mechanism for collecting and securing a package at its destination.
     media:
       type: image
       path: MobileRobotics.png
@@ -160,9 +169,9 @@
     modal: True
     date: November 2025
     title: Door Opening Robot — Introduction to Robotics
-    summary: 4-DOF serial manipulator for reaching, rotating, and sliding a door handle.
+    summary: 4-DOF serial manipulator for rotating a handle and opening a sliding door
     skills: ["MATLAB"]
-    description: MATLAB simulation of a planar 3-R serial arm with a fourth revolute handle-rotation joint. The project uses quintic trajectories, inverse kinematics, workspace and singularity analysis, Jacobian and inverse-dynamics torque calculations, and a 3-second animated door-opening task.
+    description: For the Introduction to Robotics course, I modeled and simulated a planar four-degree-of-freedom door-opening manipulator in MATLAB. The mechanism combines a 3R serial arm with a revolute joint for handle rotation. I implemented quintic trajectories and inverse kinematics, analyzed the workspace and singularities, and calculated Jacobians and inverse-dynamics torques for the simulated door-opening task.
     media:
       type: image
       path: IntroductionToRobotics.png
@@ -176,8 +185,34 @@
     title: Hybrid Tractor Powertrain — Mechanical Design
     summary: Mechanical design and dimensioning of a hybrid tractor powertrain.
     skills: ["Drawing", "CAD"]
-    description: Developed a hybrid tractor powertrain concept, prepared its mechanical design drawings, and carried out component dimensioning.
+    description: At KIT, I completed a hybrid-tractor powertrain as the capstone project of a four-semester mechanical-design sequence. I developed the powertrain concept, dimensioned its components, and produced mechanical drawings. The modal gallery also presents selected designs from the broader coursework, ordered from the newest exercise to the oldest.
     media:
       type: image
-      path: HybridPowertrain.jpeg
-      alt: Mechanical design drawing of the hybrid tractor powertrain
+      path: Mechanical_Design_06.jpeg
+      alt: Newest mechanical design drawing in the coursework gallery
+    contents:
+      - title: Mechanical design 04
+        media:
+          type: image
+          path: Mechanical_Design_04.jpeg
+          alt: Mechanical design drawing, exercise 04
+      - title: Mechanical design 03
+        media:
+          type: image
+          path: MechanicalDesign_03.jpeg
+          alt: Mechanical design drawing, exercise 03
+      - title: Mechanical design 02
+        media:
+          type: image
+          path: Mechanical_Design_02.jpeg
+          alt: Mechanical design drawing, exercise 02
+      - title: Mechanical design 01
+        media:
+          type: image
+          path: Mechanical_Design_01.jpeg
+          alt: Oldest mechanical design drawing in the coursework gallery
+      - title: Hybrid tractor powertrain
+        media:
+          type: image
+          path: HybridPowertrain.jpeg
+          alt: Mechanical design drawing of the hybrid tractor powertrain
