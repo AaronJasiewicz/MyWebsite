@@ -1,0 +1,28 @@
+<section id="free-time" class="free-time-wrap">
+  <div class="free-time-background" data-video-sequence data-loop="true" data-transition-ms="2400" aria-hidden="true">
+    <video class="free-time-video is-active" muted loop playsinline preload="auto" data-repeat="1">
+      <source src="{{ '/assets/video/backgrounds/Background_Hongkong.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <video class="free-time-video" muted loop playsinline preload="auto" data-repeat="3">
+      <source src="{{ '/assets/video/backgrounds/Background_Turkey.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <video class="free-time-video" muted loop playsinline preload="auto" data-repeat="1">
+      <source src="{{ '/assets/video/backgrounds/Background_Laos.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    <div class="free-time-backdrop-shade"></div>
+  </div>
+  <div class="free-time-content">
+    <p class="title">{{ site.theme_settings.free_time_title }}</p>
+    <div class="free-time-grid">
+      {% for photo in site.data.free_time.photos %}
+      <figure class="free-time-photo">
+        <img src="{{ photo.path | relative_url }}" alt="{{ photo.alt }}" loading="lazy">
+      </figure>
+      {% endfor %}
+    </div>
+    <blockquote class="free-time-quote">
+      “Live as if you were to die tomorrow. Learn as if you were to live forever.”
+      <cite>— Mahatma Gandhi</cite>
+    </blockquote>
+  </div>
+</section>

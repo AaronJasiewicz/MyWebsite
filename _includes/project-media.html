@@ -1,0 +1,37 @@
+{% assign media = include.media %}
+{% if media and media.path != empty %}
+  {% assign media_url = media.path %}
+  {% unless media.path contains '://' %}
+    {% assign first_path_character = media.path | slice: 0 %}
+    {% if first_path_character == '/' %}
+      {% assign media_url = media.path | relative_url %}
+    {% else %}
+      {% assign media_url = media.path | prepend: '/assets/project/' | relative_url %}
+    {% endif %}
+  {% endunless %}
+  {% assign poster_url = media.poster %}
+  {% if media.poster %}
+    {% unless media.poster contains '://' %}
+      {% assign first_poster_character = media.poster | slice: 0 %}
+      {% if first_poster_character == '/' %}
+        {% assign poster_url = media.poster | relative_url %}
+      {% else %}
+        {% assign poster_url = media.poster | prepend: '/assets/project/' | relative_url %}
+      {% endif %}
+    {% endunless %}
+  {% endif %}
+  {% case media.type %}
+    {% when 'video' %}
+      {% assign video_type = media.mime_type | default: 'video/mp4' %}
+      <video controls playsinline preload="metadata"{% if poster_url %} poster="{{ poster_url }}"{% endif %}>
+        <source src="{{ media_url }}" type="{{ video_type }}">
+        Your browser does not support the video tag.
+      </video>
+    {% when 'embed' %}
+      <div class="embed-wrap">
+        <iframe src="{{ media_url }}" title="{{ media.alt | default: 'Embedded project video' }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+      </div>
+    {% else %}
+      <img src="{{ media_url }}" alt="{{ media.alt }}" loading="lazy">
+  {% endcase %}
+{% endif %}

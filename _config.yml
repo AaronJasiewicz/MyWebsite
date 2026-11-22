@@ -5,8 +5,8 @@ baseurl: "/Grape-Academic-Theme"
 # Features Setting
 # Turn subpages on or off
 publications: True
-presentations: True
-blog: True
+presentations: False
+blog: False
 
 # Language of the website
 lang: en
@@ -17,11 +17,11 @@ tagline: A jekyll theme for academic portfolios
 description: The demonstration page for the Grape Academic Theme, a jekyll theme for academic portfolios based on the Grape Theme.
 author: Christoph Jabs (chrjabs)
 twitter:
-  username: chrjabs
+  username: AaronInAldi
   card: A jekyll theme for academic portfolios
-logo: /assets/img/smile.png
+logo: /assets/img/Portrait.jpeg
 social:
-  name: Christoph Jabs
+  name: Aaron Kuba Jasiewicz
   links:
     - https://twitter.com/chrjabs
     - https://github.com/chrjabs
@@ -31,11 +31,13 @@ locale: en_GB
 theme_settings:
   title: Grape Academic Theme
 
-  experience_title: EXPERIENCE
+  education_title: EDUCATION
+  experience_title: RECENT ACTIVITIES
   interests_title: RESEARCH INTERESTS
   skills_title: SKILLS
   awards_title: AWARDS
   projects_title: PROJECTS
+  free_time_title: FREE TIME
   recentpubs_title: RECENT PUBLICATIONS
 
 # Pagination

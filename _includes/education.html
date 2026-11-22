@@ -1,0 +1,12 @@
+{% if site.data.profile.education %}
+  <p class="title">{{ site.theme_settings.education_title }}</p>
+  <ul class="education-list">
+    {% for item in site.data.profile.education %}
+    <li class="education">
+      <p class="degree">{{ item.degree }}</p>
+      <p class="school">{{ item.school }}</p>
+      <p class="date">{{ item.start }} &ndash; {{ item.end }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+{% endif %}

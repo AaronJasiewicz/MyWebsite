@@ -1,22 +1,28 @@
 <section id="project">
+  <div class="project-background" aria-hidden="true">
+    <video class="background-video" autoplay muted loop playsinline preload="metadata">
+      <source src="{{ '/assets/project/Background_coding2.mp4' | relative_url }}" type="video/mp4">
+    </video>
+  </div>
+  <div class="project-shade"></div>
   <div class="project-wrap">
     <p class="title">{{ site.theme_settings.projects_title }}</p>
+    {% assign project_groups = site.data.projects | group_by_exp: "item", "item.project.category" %}
+    {% for group in project_groups %}
+    <p class="category-title">{{ group.name }}</p>
     <div class="card-container">
-      {% for _ in site.data.projects %}
-      {% assign project = _.project %}
+      {% for item in group.items %}
+      {% assign project = item.project %}
       {% assign id = id | plus: 1 %}
+      {% assign project_media = project.media | default: project.image %}
       <div class="card-wrapper">
         <div class="card">
-          {% if project.image %}
+          {% if project_media %}
           <div class="img-wrap">
-            {% if project.image.path contains '://' -%}
-            <img src="{{ project.image.path }}" alt="{{ project.image.alt }}">
-            {%- else -%}
-            <img src="{{ project.image.path | prepend: '/assets/project/' | relative_url }}" alt="{{ project.image.alt }}">
-            {%- endif %}
+            {% include project-media.html media=project_media %}
           </div>
           {% endif %}
-          <div class="text-wrap {% if project.image %}{% endif %}">
+          <div class="text-wrap">
             <div class="title-wrap">
               <p class="date">{{ project.date }}</p>
               <div class="title">{{ project.title }}</div>
@@ -49,6 +55,7 @@
       <!-- Modal Box -->
       {% endfor %}
     </div>
+    {% endfor %}
   </div>
   <div class="bg"></div>
 </section>

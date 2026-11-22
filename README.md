@@ -110,22 +110,23 @@ theme_settings :
 
 Profile is displayed on the index page, and also experience and skills are displayed on the portfolio page.
 The profile is configured in `_data/profile.yml`.
+Work experience is shown on the left of the portfolio; education is shown as a compact list on the right. Research interests appear as a compact two-column list below the profile image.
 
 ```
-image: assets/img/smile.png
-username: Christoph Jabs
-description: creator of the Grape-Academic-Theme! Grape-Academic-Theme is a modification of the Grape-Theme by naye0ng, making it more suitable as an academic portfolio.
-webpage: https://chrjabs.github.io
+image: assets/img/portrait.jpg
+username: Your Name
+description: A short profile
+education:
+  - start: 2020
+    end: 2024
+    school: Example University
+    degree: B.Sc. Example
 experience:
-  - start: 2017-05-03
-    end: 2018-05-06
-    experience : company name, title
+  - start: 2024
+    end: Present
+    experience: Example role, Example organization
 interests:
-  - Interest 1
-  - Interest 2
-skills: 
-  - skill: HTML5 & CSS
-    value: 85  # Percent value
+  - Example interest
 ```
 
 ### Presentations
@@ -162,6 +163,7 @@ paginate: 5
 ![home](https://chrjabs.github.io/Grape-Academic-Theme/assets/img/portfolio.png)
 
 The Project configuration is available in `_data/projects.yml`.
+Set `category` on each project to group cards into subsections (for example, `Academic & Professional` and `Course Projects`). For local media, add the asset under `assets/project/` and set `media.path` to its filename; leave the path empty until the asset is ready.
 
 The portfolio page provides projects and detailed views by modal.
 If `modal : False` is selected, modal will not be displayed on site. 
@@ -181,11 +183,15 @@ print: True
 modal: True  
 ```
 
-Add details(link, description) about your projects
+Add details(link, description) about your projects. Use `media` to show an image, video, or embedded video in place of the project image. Local media files are stored in `assets/project/`; external media URLs are also supported.
 
 ```
 url: https://github.com/naye0ng/Grape-Theme # Full URL
-image: "portfolio.png" # path: assets/project/
+media:
+  type: video # image (default), video, or embed
+  path: "project-demo.mp4" # path: assets/project/; use an embed URL for type: embed
+  alt: "Demo of the project"
+  poster: "project-poster.png" # optional video poster
 date: 2019.06.09 - 2019.07.11
 title: 
 summary: 
@@ -193,9 +199,16 @@ description:
 # modal contents
 contents:
   - title:
-    image:      	    
+    media:
+      type: embed
+      path: "https://www.youtube.com/embed/VIDEO_ID"
+      alt: "Project demonstration"
     description: 
 ```
+
+The existing `image` field still works. For WebM videos, set `mime_type: video/webm`; `video/mp4` is used by default. For embedded videos, provide the provider's embed URL (for example, YouTube's `/embed/VIDEO_ID` URL).
+
+The Free Time gallery is configured in `_data/free_time.yml`; add hobby and travel images to `assets/img/free-time/`. The Hong Kong, Turkey, and Laos clips play in sequence with crossfades behind the gallery, and the playlist loops. The coding background clips are stored in `assets/project/`: `Background_coding1.mp4` appears behind Career and `Background_coding2.mp4` behind Projects.
 
 ### Colors
 

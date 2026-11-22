@@ -2,18 +2,44 @@
 
 #publications {
     @extend %page-padding;
-    .bg{
-        content: "";
-        position: absolute;
-        z-index: -1;
-        width: 100%;
-        top: 105px;
-        left:0%;
-        height: 95px;
-        background-color: vars.$theme-dark;
-    }
     h1.title{
         color:#fff;
         margin-bottom: 30px;
+    }
+    color: #dce4ec;
+    .publication-status {
+        margin: -15px 0 28px;
+        color: #a9b5c2;
+        font-size: 0.9rem;
+    }
+    h2.bibliography {
+        color: #a9b5c2;
+        border: 0;
+        padding-top: 0;
+    }
+    ol.bibliography {
+        color: #dce4ec;
+        li {
+            .title {
+                color: #f2f5f8;
+            }
+            .author,
+            .third-line {
+                color: #b7c2cf;
+            }
+            .links a {
+                color: #d3c4ff !important;
+            }
+            .abstract.hidden.open,
+            .bibtex.hidden.open {
+                border-color: rgba(255, 255, 255, 0.2);
+                background: #121923;
+                color: #dce4ec;
+            }
+            pre {
+                background: #121923;
+                color: #dce4ec;
+            }
+        }
     }
 }

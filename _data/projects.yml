@@ -1,48 +1,183 @@
-- project :
-    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url: https://github.com/chrjabs/Grape-Academic-Theme # Full URL
-    image:
-      path: "portfolio.png" # path: assets/project/
-      alt: "A screenshot of the portfolio page"
-    date: 05/2022 &ndash; Developing
-    title: Grape-Theme
-    summary: Academic portfolio jekyll theme.
-    description: A modification of the Grape-Theme for jekyll to be useable as an academic portfolio.
-    contents:
-        - title: 1. Portfolio Page
-          image:
-            path: portfolio.png
-            alt: "A screenshot of the portfolio page"
-          description: <li>Concise portfolio page</li>
-            <li>Recent publications</li>
-            <li>Projects</li>
-        - title: 2. Optional Blog Functionality
-          image:
-            path: home.png
-            alt: "A screenshot of the blog page"
-          description: <li>Responsive Layout</li>
-            <li>Tags</li> 
-            <li>Pagination</li>
-        - title: 3. Tags Page
-          image:
-            path: tags.png
-            alt: "A screenshot of the tags page"
-          description: <li>Responsive Layout</li> 
-            <li>Tags</li> 
+- project:
+    category: Academic & Professional
+    print: True
+    modal: True
+    date: September 2026 – Present
+    title: Visiting Researcher — Tongji University
+    summary: Foundation-model-based planning for autonomous mobile manipulation.
+    skills: ["Python (PyTorch)"]
+    description: Developing HARBOR-DOCK, a harness-engineering framework for a foundation-model planning system. It uses an evolving skill library and perception-based feedback for one-shot, long-horizon planning and execution on a dual-arm mobile manipulator.
+    media:
+      type: video
+      path: HARBOR_DOCK.mp4
+      mime_type: video/mp4
+      alt: HARBOR-DOCK harness-engineering framework demonstration
 
 - project:
-    print: True # If 'False' is selected, it will not be displayed in 'home.html > aside > .proj-content'. 
-    modal: True # If 'True' is selected, modal can open in 'portfolio.html'. 
-    url:  # Full URL
-    image: # path: assets/project/
-    date: 06/2019 &ndash; Developing
-    title: Dummy project
-    summary: This is a Dummy
-    description:  
+    category: Academic & Professional
+    print: True
+    modal: True
+    date: September 2025 – July 2026
+    title: KAIST Research & Master's Thesis — LIE-IS
+    summary: Tightly coupled invariant smoothing for state estimation in legged robots.
+    skills: ["C++", "MATLAB"]
+    description: Conducted research in the Dynamic Robot Control & Design Laboratory on a tightly coupled invariant smoother that fuses LiDAR, inertial, and leg-kinematic measurements for quadrupedal robot state estimation.
+    media:
+      type: video
+      path: InvariantSmoother.mp4
+      mime_type: video/mp4
+      alt: LIE-IS invariant smoothing framework demonstration
     contents:
-        - title: Some content
-          image:
-            path: "https://picsum.photos/id/237/200/300"
-            alt: "An image from an external URL"
-          description: "A description **with some markdown**"
+      - title: Research focus
+        description: Jointly incorporates LiDAR scan-to-map geometry with inertial and kinematic factors in a fixed-lag estimator.
+
+- project:
+    category: Academic & Professional
+    print: True
+    modal: True
+    date: July 2024 – September 2025
+    title: Co-Founder — SKYLAB Aerial Robotics
+    summary: Co-founded a student aerial robotics team.
+    skills: ["C++"]
+    description: Managed financial resources and hardware procurement, and led development of drone-control software.
+    media:
+      type: image
+      path: "/assets/img/SkyLAB.jpeg"
+      alt: SKYLAB Aerial Robotics team with a drone
+
+- project:
+    category: Academic & Professional
+    print: True
+    modal: True
+    date: April 2024 – December 2024
+    title: Working Student — Fraunhofer IOSB
+    summary: Mobile software development contributing to the AMFIS project.
+    skills: ["Java", "Kotlin"]
+    description: During my working-student role at Fraunhofer IOSB, I developed a standalone Android application in Java and Kotlin for DJI systems and unmanned aerial vehicles, contributing to the AMFIS project.
+    url: https://www.iosb.fraunhofer.de/en/projects-and-products/AMFIS.html
+    media:
+      type: image
+      path: AMFIS.jpg
+      alt: AMFIS project at Fraunhofer IOSB
+
+- project:
+    category: Academic & Professional
+    print: True
+    modal: True
+    date: September 2023 – March 2024
+    title: R&D Intern — Mercedes-AMG
+    summary: Development vehicle support and control-unit signal analysis.
+    skills: ["Python", "CAN Bus"]
+    description: Built a Python CAN-bus tool that processes MDF4 files, identifies DTCs, error events and MIL activations, and searches predefined signal conditions.
+    media:
+      type: image
+      path: AMG.png
+      alt: Mercedes-AMG building and performance signage
+
+- project:
+    category: Academic & Professional
+    print: True
+    modal: True
+    date: August 2023
+    title: Bachelor's Thesis
+    summary: Combustion anomaly detection for a hydrogen engine.
+    skills: ["Simulink", "MATLAB", "dSPACE"]
+    description: Developed a cylinder-pressure-based method to detect combustion anomalies in a hydrogen internal-combustion engine within a rapid-prototyping environment.
+    media:
+      type: image
+      path: BA_Setup.jpeg
+      alt: Hardware-in-the-loop setup for the hydrogen engine thesis
+    contents:
+      - title: Thesis system model
+        media:
+          type: image
+          path: BA_System.jpeg
+          alt: Control-system model for combustion anomaly detection
+        description: Implemented an engine-indication measurement chain, added online thermodynamic and combustion calculations, and validated the control strategy in a hardware-in-the-loop environment.
+
+- project:
+    category: Course Projects
+    print: True
+    modal: True
+    date: December 2025
+    title: Autonomous Driving Simulation — CARLA
+    summary: A course project using the CARLA simulator.
+    skills: ["Python", "CARLA"]
+    description: Simulated an autonomous driving scenario in the CARLA environment.
+    media:
+      type: video
+      path: CARLA.mp4
+      mime_type: video/mp4
+      alt: CARLA autonomous driving simulation
+
+- project:
+    category: Course Projects
+    print: True
+    modal: True
+    date: April 2025
+    title: Traffic Network Enhancements — ITS
+    summary: VISSIM case study of a traffic network in Sandhausen.
+    skills: ["VISSIM"]
+    description: Assessed traffic-network enhancements in a four-junction VISSIM model, including vehicle and pedestrian flows, public transport, and intersection priorities.
+    media:
+      type: video
+      path: ITSImproved.mp4
+      mime_type: video/mp4
+      alt: Improved VISSIM traffic network simulation
+    contents:
+      - title: Default traffic scenario
+        media:
+          type: video
+          path: ITSDefault.mp4
+          mime_type: video/mp4
+          alt: Default VISSIM traffic network simulation
+        description: Baseline traffic simulation before the network enhancements.
+
+- project:
+    category: Course Projects
+    print: True
+    modal: True
+    date: April 2025
+    title: Autonomous Warehouse Delivery Robot — Mobile Robotics
+    summary: Design and navigation of an autonomous warehouse robot in Webots.
+    skills: ["Python", "Webots"]
+    description: Designed a six-wheel delivery robot and implemented GPS/IMU-based localization, A* path planning, waypoint following, and real-time obstacle avoidance in Webots.
+    media:
+      type: image
+      path: MobileRobotics.png
+      alt: Six-wheel autonomous warehouse delivery robot
+    contents:
+      - title: Mobile robot demonstration
+        media:
+          type: video
+          path: MobielRoboticsVideo.mp4
+          mime_type: video/mp4
+          alt: Mobile robotics project demonstration
+
+- project:
+    category: Course Projects
+    print: True
+    modal: True
+    date: November 2025
+    title: Door Opening Robot — Introduction to Robotics
+    summary: 4-DOF serial manipulator for reaching, rotating, and sliding a door handle.
+    skills: ["MATLAB"]
+    description: MATLAB simulation of a planar 3-R serial arm with a fourth revolute handle-rotation joint. The project uses quintic trajectories, inverse kinematics, workspace and singularity analysis, Jacobian and inverse-dynamics torque calculations, and a 3-second animated door-opening task.
+    media:
+      type: image
+      path: IntroductionToRobotics.png
+      alt: MATLAB robot animation for the door-opening project
+
+- project:
+    category: Course Projects
+    print: True
+    modal: True
+    date: June 2022
+    title: Hybrid Tractor Powertrain — Mechanical Design
+    summary: Mechanical design and dimensioning of a hybrid tractor powertrain.
+    skills: ["Drawing", "CAD"]
+    description: Developed a hybrid tractor powertrain concept, prepared its mechanical design drawings, and carried out component dimensioning.
+    media:
+      type: image
+      path: HybridPowertrain.jpeg
+      alt: Mechanical design drawing of the hybrid tractor powertrain

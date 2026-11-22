@@ -2,7 +2,7 @@
 <html lang="{{ site.lang }}">
 {% include head.html %}
 {% include scripts/jquery.html %}
-<body>
+<body{% if page.layout == 'portfolio' %} class="portfolio-page dark-theme"{% elsif page.layout == 'publications' %} class="publications-page dark-theme"{% endif %}>
   <div class="container">
     {{ content }}
   </div>

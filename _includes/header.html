@@ -13,19 +13,12 @@
             <li class="btn-nav">Publications</li>
           </a>
         {% endif %}
-        {% if site.presentations %}
-          <a href="{{ '/presentations' | relative_url }}">
-            <li class="btn-nav">Presentations</li>
-          </a>
-        {% endif %}
-        {% if site.blog %}
-          <a href="{{ '/blog' | relative_url }}">
-            <li class="btn-nav">Blog</li>
-          </a>
-          <a href="{{ '/tags' | relative_url }}">
-            <li class="btn-nav">Tags</li>
-          </a>
-        {% endif %}
+        <a href="{{ '/' | relative_url }}#project">
+          <li class="btn-nav">Projects</li>
+        </a>
+        <a href="{{ '/'' | relative_url }}#free-time">
+          <li class="btn-nav">Free Time</li>
+        </a>
         <!-- publications -->
         {% when 'publications' %}
         <a href="{{ '/'' | relative_url }}">

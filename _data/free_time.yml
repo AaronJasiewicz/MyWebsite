@@ -1,0 +1,29 @@
+photos:
+  - path: /assets/img/free-time/Hobby_3DPrinting.jpeg
+    alt: 3D printing a part
+  - path: /assets/img/free-time/hobby-basketball.jpeg
+    alt: Playing basketball
+  - path: /assets/img/free-time/hobby-bike.jpeg
+    alt: Cycling
+  - path: /assets/img/free-time/hobby-hike.jpeg
+    alt: Hiking
+  - path: /assets/img/free-time/hobby-jog.jpeg
+    alt: Jogging
+  - path: /assets/img/free-time/hobby-pool.jpeg
+    alt: Playing pool
+  - path: /assets/img/free-time/hobby-slide.jpeg
+    alt: Volcano boarding
+  - path: /assets/img/free-time/hobby-snowboard.jpeg
+    alt: Snowboarding
+  - path: /assets/img/free-time/hobby-surf.jpeg
+    alt: Surfing
+  - path: /assets/img/free-time/travel-china.jpeg
+    alt: Travel in China
+  - path: /assets/img/free-time/travel-egypt.jpeg
+    alt: Travel in Egypt
+  - path: /assets/img/free-time/travel-ethiopia.jpeg
+    alt: Travel in Ethiopia
+  - path: /assets/img/free-time/travel-japan.jpeg
+    alt: Travel in Japan
+  - path: /assets/img/free-time/travel-morocco.jpeg
+    alt: Travel in Morocco
