@@ -1,6 +1,11 @@
 image: assets/img/Portrait.png
 username: Aaron Kuba Jasiewicz
-description: I am a visiting researcher at the Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University. My research focuses on foundation-model-based planning for autonomous robots, especially long-horizon mobile manipulation. I graduated from the dual-degree master's program in Mechanical Engineering at Karlsruhe Institute of Technology (KIT) and the Korea Advanced Institute of Science and Technology (KAIST) and am currently pursuing a second master's degree in Mechatronics and Information Technology at KIT..
+description: |-
+  I am a visiting researcher at the Shanghai Research Institute for Intelligent Autonomous Systems, Tongji University.
+
+  My research focuses on foundation-model-based planning for autonomous robots, especially long-horizon mobile manipulation.
+
+  I graduated from the dual-degree master's program in Mechanical Engineering at Karlsruhe Institute of Technology (KIT) and the Korea Advanced Institute of Science and Technology (KAIST) and am currently pursuing a second master's degree in Mechatronics and Information Technology at KIT.
 education:
   - start: September 2025
     end: July 2026
